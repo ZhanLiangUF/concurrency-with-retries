@@ -21,7 +21,7 @@ public class AddressParser {
 
   public static void main(String[] args) throws Exception {
     try {
-      File file = new File("C:\\Users\\Zhan\\Projects\\workmarket-app\\list.txt");
+      File file = new File("C:\\Users\\Zhan\\Projects\\concurrency-with-retries\\list.txt");
       BufferedReader br = new BufferedReader(new FileReader(file));
       ArrayList<String> listOfAddresses = new ArrayList<String>();
       String st;
@@ -87,7 +87,7 @@ public class AddressParser {
       StringBuilder urlParams = new StringBuilder("?address=");
       urlParams.append(URLEncoder.encode(s,"UTF-8"));
       urlParams.append("&key=");
-      urlParams.append(URLEncoder.encode("AIzaSyC9T1lcDcnJU22IRhuTf25rOv6f4bdLitI","UTF-8"));
+      urlParams.append(URLEncoder.encode("Enter API KEY","UTF-8"));
       URL siteURL = new URL(url + urlParams.toString());
 			HttpURLConnection con = (HttpURLConnection) siteURL.openConnection();
 
